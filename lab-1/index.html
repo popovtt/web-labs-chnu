@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтерактивні Завдання</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#task1">Підрахунок цифр</a></li>
+                <li><a href="#task2">Число навпаки</a></li>
+                <li><a href="#task3">Камінь-ножиці-папір</a></li>
+                <li><a href="#task4">Казино</a></li>
+            </ul>
+            <a id="logo"><img id="logoSize" src="img1.jpg" alt="logo"></a>
+        </nav>
+
+        <!-- Модальне вікно  w3Schools-->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Студент 201 Групи<br>Попов Роман</p>
+                <img id="modalPhoto" src="me.jpg" alt="#">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Підрахунок входжень цифри -->
+        <section id="task1">
+            <h2>Підрахунок цифр</h2>
+            <input type="text" id="numberInput" placeholder="Введіть набір чисел">
+            <input type="text" id="digitInput" placeholder="Цифра для пошуку">
+            <button id="countButton">Порахувати</button>
+            <p id="countOutput"></p>
+        </section>
+
+        <!-- Число у зворотному порядку -->
+        <section id="task2">
+            <h2>Число навпаки</h2>
+            <input type="text" id="reverseInput" placeholder="Введіть число">
+            <button id="reverseButton">Перевернути</button>
+            <p id="reverseOutput"></p>
+        </section>
+
+        <!-- Камінь-ножиці-папір -->
+        <section id="task3">
+            <h2>Камінь-ножиці-папір</h2>
+            <button class="rpsButton" data-choice="Камінь">Камінь</button>
+            <button class="rpsButton" data-choice="Ножиці">Ножиці</button>
+            <button class="rpsButton" data-choice="Папір">Папір</button>
+            <p id="gameResult"></p>
+        </section>
+
+        <!-- Крутка слотів -->
+        <section id="task4">
+            <h2>Крутка слотів</h2>
+            <div id="slotDisplay">🍒 🍋 🍊</div>
+            <button id="slotButton">Крутити</button>
+            <p id="slotResult"></p>
+        </section>
+    </main>
+</body>
+</html>
